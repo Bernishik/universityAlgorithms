@@ -1,0 +1,41 @@
+from hash import Hash
+
+def part1():
+    h = Hash(5)
+    print("Хеш таблиця")
+    print(h.h)
+    h.ChainedHashInsert(1)
+    h.ChainedHashInsert(2)
+    h.ChainedHashInsert(3)
+    h.ChainedHashInsert(4)
+    h.ChainedHashInsert(5)
+    h.ChainedHashInsert(6)
+    print(h.h)
+    print("номер елементу")
+    print(h.ChainedHashSearch(6))
+    print("видалення елементу")
+    h.ChainedHashDelete(6)
+    print("показ таблиці")
+    print(h.ChainedHashShow())
+
+def part2():
+    print("Part 2")
+    h = Hash(5)
+    print("Хеш таблиця")
+    print(h.h)
+    h.HashInsert(1)
+    h.HashInsert(2)
+    h.HashInsert(3)
+    h.HashInsert(4)
+    h.HashInsert(5)
+    h.HashInsert(6)
+    print("номер елементу")
+    print(h.HashSearch(6))
+    print(h.h)
+    print("видалення елементу")
+    h.HashDelete(1)
+    h.HashShow()
+
+if __name__ == '__main__':
+    # part1()
+    part2()
